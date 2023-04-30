@@ -1,22 +1,16 @@
 <h1>Liste de Pokémon</h1>
-<input type="number" #input (keyup.enter)="selectPokemon(input.value)" />
-
-<!-- <div class="container">
-  <div
-    *ngFor="let pokemon of pokemonList"
-    class="card"
-    (click)="handleClick(pokemon.name)"
-  >
-    <div class="imgContainer">
-      <img [src]="pokemon.picture" alt="{{ pokemon.name }}" />
-    </div>
-    <div>
-      <p>Nom: {{ pokemon.name }}</p>
-      <p>Force: {{ pokemon.hp }}</p>
-    </div>
+<section class="container">
+  <div class="container-cards">
+    <app-card
+      *ngFor="let pokemon of pokemonList"
+      (click)="handleClick(pokemon.name)"
+      [pokemon]="pokemon"
+      [tooltip]="'Cliquez sur ' + pokemon.name + ' pour en savoir plus'"
+    ></app-card>
   </div>
-</div> -->
-<div class="container">
+</section>
+<!-- <input type="number" #input (keyup.enter)="selectPokemon(input.value)" /> -->
+<!-- <div class="container">
   <ng-container *ngIf="pokemonSelected; else noPokemon">
     <div class="card" (click)="handleClick(pokemonSelected?.name)">
       <div class="imgContainer">
@@ -28,6 +22,7 @@
       <div>
         <p>Nom: {{ pokemonSelected?.name }}</p>
         <p>Force: {{ pokemonSelected?.hp }}</p>
+        <p>Type: {{ pokemonSelected?.types }}</p>
         <div class="badge">
           <span
             [ngClass]="{
@@ -43,4 +38,4 @@
   <ng-template #noPokemon>
     <p>Aucun Pokemon trouvé</p>
   </ng-template>
-</div>
+</div> -->
