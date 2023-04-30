@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+  overflow-x: auto;
+}
+.card {
+  width: 200px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div > img {
+  width: 120px;
+}
+div > div {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.green {
+  background-color: green;
+  color: white;
+  padding: 4px;
+  border-radius: 50%;
+  height: 2px;
+}
+
+.red {
+  background-color: red;
+  color: white;
+  padding: 4px;
+  border-radius: 50%;
+  height: 2px;
+}
