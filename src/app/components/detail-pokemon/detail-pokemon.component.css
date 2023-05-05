@@ -1,0 +1,13 @@
+.card-action > a {
+  cursor: pointer;
+  color: black !important;
+}
+.card-action {
+  border-top: 1px solid #000;
+}
+.card {
+  background-color: rgb(248, 232, 232);
+}
+tr:nth-child(odd) {
+  background-color: #e4bbbb !important;
+}

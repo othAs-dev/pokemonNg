@@ -4,8 +4,14 @@
   </div>
   <hr />
   <div>
-    <p>Nom: {{ pokemon.name }}</p>
-    <p>Force: {{ pokemon.hp }}</p>
-    <p>Type: {{ pokemon.types }}</p>
+    <p>{{ pokemon.name }}</p>
+    <div class="typeContainer">
+      <span
+        *ngFor="let pkmnTypes of pokemon.types"
+        class="{{ pkmnTypes | pokemonTypeColor }}"
+      >
+        {{ pkmnTypes }}
+      </span>
+    </div>
   </div>
 </div>

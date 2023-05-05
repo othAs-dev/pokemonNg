@@ -8,10 +8,11 @@
   flex-direction: column;
   cursor: pointer;
   transition: all 0.3s ease;
+  min-height: 200px;
 }
 .card:hover {
   border-color: black;
-  background-color: rgb(250, 250, 250);
+  background-color: rgb(246, 208, 208);
   scale: 1.05;
 }
 .imgContainer {
@@ -25,13 +26,19 @@ div > img {
 hr {
   width: 80%;
 }
+.typeContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row !important;
+  gap: 10px !important;
+}
 div > div {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 5px;
 }
 div > div > p {
   margin: 0;
@@ -39,7 +46,7 @@ div > div > p {
 div > div:last-child {
   margin-bottom: 10px;
 }
-.badge {
+/* .badge {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,4 +65,4 @@ div > div:last-child {
   padding: 4px;
   border-radius: 50%;
   height: 2px;
-}
+} */
