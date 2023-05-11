@@ -1,0 +1,18 @@
+<div class="title">
+  <h1>Pokedex</h1>
+  <a class="btn-add btn-floating btn-large waves-light z-depth-5" routerLink="/pokemon/add">➕</a>
+</div>
+<section class="container">
+  <div class="container-cards">
+    <app-card
+      *ngFor="let pokemon of pokemonList"
+      (click)="handleClick(pokemon.id)"
+      [pokemon]="pokemon"
+      [tooltip]="'Cliquez sur ' + pokemon.name + ' pour en savoir plus'"
+    ></app-card>
+  </div>
+</section>
+
+<footer>
+  <p>Developed by Othmane A.S for learn Angular</p>
+</footer>
