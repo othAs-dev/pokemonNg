@@ -13,6 +13,7 @@ h1 {
   padding: 8px 0;
   margin: 0;
 }
+
 .btn-add{
   background-color: #e8c5b3 !important;
   position: fixed;
@@ -21,6 +22,7 @@ h1 {
   right: 25px;
 
 }
+
 .container-cards {
   padding: 10px 0;
   display: flex;
