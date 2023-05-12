@@ -2,6 +2,8 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .title{
   width: 100%;
@@ -22,9 +24,13 @@ h1 {
   right: 25px;
 
 }
-
+.search-container{
+  width: 50%;
+  margin-top: 20px;
+}
 .container-cards {
   padding: 10px 0;
+  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;

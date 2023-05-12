@@ -2,10 +2,10 @@
   <h1>Pokedex</h1>
   <a class="btn-add btn-floating btn-large waves-light z-depth-5" routerLink="/pokemon/add">➕</a>
 </div>
+<section class="container">
 <div class="search-container">
   <app-search-pokemon></app-search-pokemon>
 </div>
-<section class="container">
   <div class="container-cards">
     <app-card
       *ngFor="let pokemon of pokemonList"
